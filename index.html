@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Акустична варта</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-bar">
+        <div class="brand-block">
+          <strong class="brand-name">Акустична варта</strong>
+          <span class="brand-slogan">Тиша сьогодні — комфорт завтра</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Головна навігація">
+          <a href="#about" class="active-link">Головна</a>
+          <a href="#monitoring">Моніторинг</a>
+          <a href="#services">Послуги</a>
+          <a href="#order">Замовити</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-section" aria-label="Акустична варта">
+      <img src="images/hero-header.png" alt="Професійний акустичний моніторинг міста" />
+      <a href="#order" class="hero-order-button">Замовити дослідження</a>
+    </section>
+
+    <main>
+      <section id="about" class="intro-section">
+        <div class="intro-text">
+          <span class="section-label">Про сервіс</span>
+          <h2>Дані, які допомагають місту звучати спокійніше</h2>
+          <p id="company-description" class="description conflict-text">
+            «Акустична варта» встановлює тимчасові акустичні датчики, проводить вимірювання рівня
+            шуму та готує звіти для забудовників, ОСББ, бізнес-центрів і міських служб.
+          </p>
+          <p>
+            Ми фіксуємо денні та нічні піки, порівнюємо показники з допустимими нормами і
+            допомагаємо обрати рішення: від зміни графіка робіт до встановлення шумозахисних
+            екранів.
+          </p>
+        </div>
+        <div class="intro-highlights">
+          <div class="highlight-item">
+            <strong>24/7</strong>
+            <span>збір даних у потрібних точках</span>
+          </div>
+          <div class="highlight-item">
+            <strong>12</strong>
+            <span>датчиків у типовому проєкті</span>
+          </div>
+          <div class="highlight-item">
+            <strong>PDF</strong>
+            <span>звіт з висновками та рекомендаціями</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="monitoring" class="monitoring-section">
+        <div class="monitoring-heading">
+          <span class="section-label">Live-дані</span>
+          <h2>Поточний моніторинг</h2>
+          <p>
+            Зведення з активного об'єкта: рівень шуму, період вимірювання, кількість точок і статус
+            польової групи.
+          </p>
+        </div>
+
+        <div class="monitoring-dashboard">
+          <div class="noise-gauge">
+            <strong>62</strong>
+            <span>дБ середній рівень</span>
+          </div>
+
+          <div class="monitoring-details">
+            <div class="metric">
+              <span class="metric-label">Об'єкт</span>
+              <strong>ЖК «Дніпровські тераси»</strong>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Статус</span>
+              <strong class="status status-active">вимірювання тривають</strong>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Період</span>
+              <strong>08:00-22:00</strong>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Кількість точок</span>
+              <strong>12 датчиків</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="active-sensors">
+        <h2>Активні сенсори</h2>
+        <p class="section-description">
+          Секція показує активні сенсори та дає змогу відфільтрувати їх за районом і статусом.
+        </p>
+
+        <div class="sensor-filters">
+          <div class="filter-controls">
+            <label class="filter-group">
+              <span class="filter-label">Район</span>
+              <select id="district-filter">
+                <option value="all">Усі райони</option>
+                <option value="Галицький">Галицький</option>
+                <option value="Франківський">Франківський</option>
+                <option value="Шевченківський">Шевченківський</option>
+                <option value="Сихівський">Сихівський</option>
+                <option value="Личаківський">Личаківський</option>
+                <option value="Залізничний">Залізничний</option>
+              </select>
+            </label>
+
+            <label class="checkbox-group">
+              <input type="checkbox" id="critical-filter" />
+              <span>Тільки критичні</span>
+            </label>
+          </div>
+          <p class="filter-note">Фільтри застосовуються автоматично після зміни значення.</p>
+        </div>
+
+        <div id="sensors-list" class="sensor-list"></div>
+      </section>
+
+      <section id="services" class="services-section">
+        <h2>Напрями роботи</h2>
+        <article class="service-card">
+          <h3>Житлові комплекси</h3>
+          <p>
+            Вимірювання шуму від доріг, будівництва, вентиляційних систем і комерційних приміщень.
+          </p>
+        </article>
+        <article class="service-card">
+          <h3>Офісні центри</h3>
+          <p>Аудит акустичного комфорту робочих зон, переговорних кімнат і відкритих просторів.</p>
+        </article>
+        <article class="service-card">
+          <h3>Міські простори</h3>
+          <p>Картування шумового навантаження парків, площ, зупинок і пішохідних вулиць.</p>
+        </article>
+        <article class="service-card">
+          <h3>Масові заходи</h3>
+          <p>Контроль рівня звуку під час концертів, фестивалів і спортивних подій.</p>
+        </article>
+      </section>
+
+      <aside id="warning" class="warning-box">
+        <span class="warning-badge">!</span>
+        <h2>Попередження</h2>
+        <p>
+          На точці «Північний фасад» зафіксовано перевищення нічного рівня шуму до 74 дБ.
+          Рекомендовано повторний замір після 23:00.
+        </p>
+      </aside>
+
+      <section class="measurements-section">
+        <h2>Останні вимірювання</h2>
+        <table class="measurements-table">
+          <thead>
+            <tr>
+              <th>Дата і час</th>
+              <th>Місце</th>
+              <th>Рівень шуму</th>
+              <th>Статус</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12.11.2024 16:20</td>
+              <td>Вул. Центральна</td>
+              <td class="danger-text">72 дБ</td>
+              <td class="danger-text">Перевищення</td>
+            </tr>
+            <tr>
+              <td>12.11.2024 13:45</td>
+              <td>ЖК «Зелений»</td>
+              <td>54 дБ</td>
+              <td class="normal-text">Норма</td>
+            </tr>
+            <tr>
+              <td>12.11.2024 11:10</td>
+              <td>Бізнес-центр «Парус»</td>
+              <td>60 дБ</td>
+              <td class="normal-text">Норма</td>
+            </tr>
+            <tr>
+              <td>11.11.2024 19:30</td>
+              <td>Міський парк</td>
+              <td>48 дБ</td>
+              <td class="normal-text">Норма</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="order" class="order-section">
+        <h2>Замовити дослідження</h2>
+        <form class="order-form" action="#" method="post">
+          <label>
+            Ім'я
+            <input type="text" name="name" placeholder="Ваше ім'я" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="name@example.com" />
+          </label>
+          <label>
+            Тип об'єкта
+            <select name="object-type">
+              <option>Житловий комплекс</option>
+              <option>Офісний центр</option>
+              <option>Підприємство</option>
+              <option>Масовий захід</option>
+            </select>
+          </label>
+          <label>
+            Період вимірювання
+            <input type="text" name="period" placeholder="Наприклад: 7 днів" />
+          </label>
+          <label class="wide-field">
+            Опис задачі
+            <textarea
+              name="description"
+              rows="5"
+              placeholder="Опишіть джерела шуму та адресу об'єкта"
+            ></textarea>
+          </label>
+          <button type="submit">Надіслати заявку</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contacts">
+      <strong>Акустична варта</strong>
+      <span class="footer-contact">contact@acoustic-varta.ua | +380 44 222 18 42</span>
+      <span>2026</span>
+    </footer>
+
+    <script type="module" src="dist/app.js"></script>
+  </body>
+</html>
