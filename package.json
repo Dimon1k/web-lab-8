@@ -1,7 +1,6 @@
 {
   "name": "web-lab-8",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -12,7 +11,7 @@
     "url": "git@github.com-dimon1k:Dimon1k/web-lab-8.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dmytro Leskiv",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
